@@ -1,7 +1,12 @@
-/* why margin top and left side? */
+/* 
+why margin top and left side? 
+look at margin auto + margin 0
+
+*/
 * {
     box-sizing: border-box;
     justify-content: center;
+    /* margin: 0 auto; */
 }
 
 a {
