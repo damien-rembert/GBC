@@ -147,7 +147,7 @@ expand on the whole screen
 }
 
 div#spacer {
-    /* position: sticky; */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
@@ -177,7 +177,7 @@ img.bg {
     
     position: relative;
     text-align: center;
-    color: white;
+    color: blue;
     width: 100%;
     height: 100%;
 
