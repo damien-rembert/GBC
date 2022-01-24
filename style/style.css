@@ -1,0 +1,413 @@
+/* why margin top and left side? */
+* {
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.pipe { 
+    display: inline;
+    color: white;
+}
+
+
+
+/* 
+TODO 
+max height = height of logo
+*/
+#top_bar {
+    z-index: 1;
+    width: 100vw;
+    display: flex;
+    flex-flow: column wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: orange;
+    /* flex-flow: column; */
+    min-height: 81px;
+    /* max-height: 81px; */
+    /* justify-content: center; */
+    /* border-bottom: 2px; */
+    border-bottom-color: black;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    max-height: 100px;
+    /* align-items: stretch;
+    justify-items: stretch; */
+
+}
+
+
+/*
+TODO add margin/padding?
+*/
+
+
+/* 
+a id="top_right_logo" href=""><img 
+    div id="logo" full size + stick to the left
+*/
+
+div#logo {
+    height: 100%;
+    max-width: 20%;
+    background-color: red;
+    left: 0;
+    width: fit-content;
+}
+div#logo img {
+    padding: 10px;
+    height: 100%;
+    left: 0;
+}
+
+/* div id="nav_bar" stick to the right + grow on the same line + flexbox parent + add black border at bottom 
+why is this not the whole length?
+DONE: 
+*/
+div#nav_bar {
+    /* top: 0; */
+    /* right: 0; */
+    height: 100vh;
+    max-width: 90%;
+    /* width: 100%; */
+    /* width: 100%; */
+    display: flex;
+    flex-flow: column wrap;
+    /* flex-grow: 1; */
+    background-color: aqua;
+    /* align-items: center; */
+    flex-grow: 1;
+
+}
+
+
+/* 
+TODO
+centre text vertically
+expand on the whole screen
+            div id="top_bar_upper" height = 50% + black bg + white txt + width 100% (+flexbox parent?)
+
+ */
+ #top_bar_upper {
+    background-color: rgb(75, 73, 73);
+    display: flex;
+    flex-flow: row wrap;
+    /* color: white; */
+    height: 50%;
+    width: 100%;
+    justify-content: space-between;
+
+    /* flex-grow: 1; */
+
+
+}
+
+#top_bar_upper a {
+    color: white;
+}
+
+#top_bar_upper div {
+    display: inline;
+}
+#top_bar_lower div {
+    display: inline;
+}
+
+
+#top_bar_lower {
+    background-color: white;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+
+}
+
+#top_shop_collapsible {
+    background-color: red;
+    height: 100vh;
+}
+
+#top_club_collapsible {
+    background-color: black;
+}
+
+#top_members {
+    background-color: rgb(180, 138, 32);
+}
+
+div#spacer {
+    /* position: sticky; */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 81px;
+
+}
+
+/* displaying the video in the bg https://www.w3schools.com/howto/howto_css_fullscreen_video.asp */
+
+video {
+    width: 100%;
+    /* min-width: 100%; */
+    /* min-height: 100%; */
+    background: rgba(0, 0, 0, 0.5);
+}
+
+img.bg {
+    display: none;
+}
+
+/* position needs fixing 
+    div id="main_screen" height = vh - nav_bar (add white space the size of nav_bar at the top?)
+*/
+
+#main_screen {
+    /* margin-top: 79px; */
+    
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+
+  }
+
+
+/* Centered text example */
+/* .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  } */
+  
+
+
+
+
+/* position needs fixing 
+        div class="fg" pin in the middle of the screen
+        */
+div.fg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+/* position needs fixing */
+/* div.fg {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    bottom: 0%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  } */
+
+.fg #title {
+    font-size: xx-large;
+}
+
+.fg a {
+    color: white;
+}
+
+
+/* 
+TODO 
+    div id="lower_content" flexbox parent + restricts use of screen to middle
+*/
+/* TODO center justify this OR make width 100% and center things inside */
+div#lower_content {
+    width: 100%;
+    /* background-color: chocolate; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center
+}
+
+
+
+/* 
+TODO 
+            div id="weekly_button" pin at the bottom of the screen above weekly_recommends
+*/
+
+
+
+
+
+/* TODO needs to go all the way down? 
+        div id="weekly_recommends" pinned
+*/
+div#weekly_recommends {
+
+    position: sticky;
+    top: 79px;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    /* background-color: blue; */
+}
+div#content_column {
+    width: 60%;
+
+}
+
+/* 
+TODO 
+        div class="three_features" 
+            ADD AN EXTRA DIV WRAPPING EVERYTHING THAT IS ALSO A FLEXBOX PARENT TO KEEP THREE FEATURES AND THUMBS ON THE RIGHT SIDE
+        div class="three_features" 
+*/
+div.three_features{
+    width: 100%;
+    /* background-color: yellow; */
+    flex-flow: row wrap;
+    /* flex-flow: column; */
+    min-height: 100px;
+    display: flex;
+}
+
+p.three_feat_title {
+    width: 100%;
+}
+
+
+div.main_feat {
+    width: 66%;
+    /* background-color: blue; */
+}
+
+/* 
+
+    <img src="https://media-cdn.greatbritishchefs.com/media/yhljkvnh/img55719.jpg?mode=crop&width=520&height=347" alt="Biscuits">
+    <a href="">
+        <p class="main_title" >Oreo Night</p>
+        <p class="main_subtitle">Recipe collection</p>
+    </a>
+    <p class="main_summary">Beautiful content. Written by a great writer, Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur saepe repellat esse cumque sunt vero nostrum eos ullam accusamus rem explicabo ad aspernatur quibusdam necessitatibus perspiciatis vel unde, harum sed.</p>
+</div>
+<div class="secondary_feat">
+    <div class="s_feat_top">
+        <a href="">
+            <img src="https://media-cdn.greatbritishchefs.com/media/xrga0epj/img29188.jpg?mode=crop&width=520&height=347" alt="More Biscuits"> */
+
+
+
+.main_feat img {
+    width: 100%;
+}
+
+div.secondary_feat {
+    width: 33%;
+    height: 60%;
+    /* background-color: green; */
+}
+
+
+.secondary_feat img {
+    width: 100%;
+}
+
+
+p.three_feat_title {
+    font-size: x-large;
+    width: 100%;
+}
+
+p.thumb_title {
+    font-size: x-large;
+}
+
+p.s_feat_title {
+    font-size: x-large;
+}
+
+p.s_feat_title {
+    font-size: x-large;
+}
+
+p.main_title {
+    font-size: x-large;
+}
+
+
+
+
+
+div.row_thumbs {
+    display: flex;
+    /* background-color: pink; */
+    flex-flow: row wrap;
+    /* flex-flow: column; */
+    min-height: 100px;
+    width: 100%
+    /* max-width: 100%; */
+}
+
+div.thumb {
+    width: 20%;
+}
+
+
+/* boolean operators in css AND and OR https://stackoverflow.com/questions/2797091/css-and-and-or */
+
+
+/* a + img on hover => decrease alpha */
+
+/* if video and @media under a size make invisible */
+
+/* if img and @media over a size make invisible */
+
+/* if thumb and @media under a size make invisible */
+
+
+/* DONE */
+/* handling the top bar: https://stackoverflow.com/questions/3593594/how-to-keep-the-header-static-always-on-top-while-scrolling/58645785#58645785 */
+
+
+
+/* 
+TODO 
+div id="top_bar" fixed + whole width + max height = height of logo + flexbox parent + prevent things from going behind
+
+    div id="logo" full size + stick to the left
+    div id="nav_bar" stick to the right + grow on the same line + flexbox parent + add black border at bottom
+            div id="top_bar_upper" height = 50% + black bg + white txt + width 100% (+flexbox parent?)
+    div id="main_screen" height = vh - nav_bar (add white space the size of nav_bar at the top?)
+        div class="fg" pin in the middle of the screen
+            div id="weekly_button" pin at the bottom of the screen above weekly_recommends
+    div id="lower_content" flexbox parent + restricts use of screen to middle
+        div id="weekly_recommends" pinned
+            ADD AN EXTRA DIV WRAPPING EVERYTHING THAT IS ALSO A FLEXBOX PARENT TO KEEP THREE FEATURES AND THUMBS ON THE RIGHT SIDE
+        div class="three_features" 
+*/
+
+
+/* 
+DONE 
+prevent things from going behind nav_bar
+
+
+
+*/
