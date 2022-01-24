@@ -246,6 +246,10 @@ div#lower_content {
     justify-content: center
 }
 
+#lower_content img:hover {
+    filter: brightness(0.4);
+    
+}
 
 
 /* 
