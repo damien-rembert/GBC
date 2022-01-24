@@ -5,7 +5,7 @@
     <title>GBC - Grate, Brutish Chef</title>
 </head>
 <body>
-    <a href="./index.html"></a>
+    <a href="./index.html">link to the more recent html version</a>
     <!-- trying to get the layout of https://www.greatbritishchefs.com/ -->
     <div id="top_bar">
         <div id="logo">
